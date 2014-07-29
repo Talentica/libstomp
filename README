@@ -25,3 +25,13 @@ Enjoy!
 
 -----------------
 The Stomp team
+
+
+========
+Build instructions
+
+./autogen.sh
+./configure -LIBS="-lapr-1"
+make 
+If you have rabbitmq running, example/stomptest should be able to send and read back a message. 
+NOTE: This contains a fix for reading from RabbitMQ. NOT tested with ActiveMQ yet.
