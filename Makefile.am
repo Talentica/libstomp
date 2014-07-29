@@ -1,1 +1,4 @@
 SUBDIRS = src example
+AM_CFLAGS=($APR_CFLAGS)
+AM_LDFLAGS=-lapr-1
+

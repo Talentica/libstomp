@@ -8,7 +8,6 @@ AC_PROG_LIBTOOL
 
 AC_CONFIG_SRCDIR([src/stomp.c])
 AC_CONFIG_HEADERS([config.h])
-
 # Checks for programs.
 AC_PROG_CC
 AM_PROG_CC_C_O
@@ -22,7 +21,5 @@ PKG_CHECK_MODULES([APR],[apr-1])
 AC_CHECK_FUNCS([strstr])
 
 
-AC_CONFIG_FILES([Makefile
-		src/Makefile
+AC_OUTPUT([Makefile src/Makefile
 		example/Makefile])
-AC_OUTPUT
